@@ -1,11 +1,19 @@
 import { render, screen } from '@testing-library/react';
 
 import Home from '.';
+import { renderTheme } from '../../styles/render-theme';
+import { theme } from '../../styles/theme';
 
 test('renders learn react link', () => {
-  render(<Home />);
+  const { debug } = renderTheme(<Home />);
 
-  const linkElement = screen.getByText(/learn react/i);
+  const headingContainer = screen.getByRole('heading', { name: 'hello' })
+    .parentElement;
+  expect(headingContainer).toHaveStyle({
+    background: theme.colors.mainBg,
+  });
 
-  expect(linkElement).toBeInTheDocument();
+  expect(headingContainer).toMatchSnapshot();
+
+  expect(headingContainer).toHaveStyleRule('background', 'red');
 });
