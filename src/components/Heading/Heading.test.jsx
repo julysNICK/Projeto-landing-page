@@ -14,6 +14,12 @@ describe('<Heading />', () => {
       'text-transform': 'none',
     });
   });
+  it('should  to match snapshot', () => {
+    const { container } = renderTheme(<Heading>Texto</Heading>);
+    const heading = screen.getByRole('heading', { name: 'Texto' });
+
+    expect(container).toMatchSnapshot();
+  });
   it('should  render whith white color', () => {
     renderTheme(<Heading colorDark={false}>Texto</Heading>);
     const heading = screen.getByRole('heading', { name: 'Texto' });
