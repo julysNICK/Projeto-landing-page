@@ -13,11 +13,9 @@ exports[`<Heading /> should  to match snapshot 1`] = `
   }
 }
 
-<div>
-  <h1
-    class="c0"
-  >
-    Texto
-  </h1>
-</div>
+<h1
+  class="c0"
+>
+  Texto
+</h1>
 `;
