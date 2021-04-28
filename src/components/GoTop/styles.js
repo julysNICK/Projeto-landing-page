@@ -2,7 +2,6 @@ import styled, { css } from 'styled-components';
 
 export const Container = styled.a`
   ${({ theme }) => css`
-    scroll-behavior: smooth;
     position: fixed;
     background: ${theme.colors.primaryColor};
     color: ${theme.colors.white};

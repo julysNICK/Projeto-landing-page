@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
-import { Container as Textcomponent } from '../Textcomponent/styles';
+import { Container as TextComponent } from '../Textcomponent/styles';
 import { Container as SectionContainer } from '../SectionContainer/styles';
+
 export const Container = styled.footer`
   ${({ theme }) => css`
     text-align: center;
@@ -9,10 +10,10 @@ export const Container = styled.footer`
       color: inherit;
       text-decoration: none;
     }
-    ${Textcomponent} {
+    & ${TextComponent} {
       font-size: ${theme.font.sizes.small};
     }
-    ${SectionContainer} {
+    & ${SectionContainer} {
       padding-top: 0;
       padding-bottom: 0;
     }

@@ -1,4 +1,5 @@
 import { createGlobalStyle, css } from 'styled-components';
+
 export const GlobalStyles = createGlobalStyle`
   * {
     margin: 0;
@@ -7,12 +8,11 @@ export const GlobalStyles = createGlobalStyle`
   }
   html {
     font-size: 62.5%;
-    scroll-behavior:smooth;
+    scroll-behavior: smooth;
   }
   body {
     font-size: 1.6rem;
     font-family: ${({ theme }) => theme.font.family.default};
-    scroll-behavior:smooth;
   }
   h1, h2, h3, h4, h5, h6 {
     font-family: ${({ theme }) => theme.font.family.secondary};
@@ -27,5 +27,9 @@ export const GlobalStyles = createGlobalStyle`
   }
   a {
     color: ${({ theme }) => theme.colors.secondaryColor};
+  }
+  .table {
+    width: 100%;
+    overflow-y: auto;
   }
 `;

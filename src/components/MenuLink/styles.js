@@ -8,7 +8,6 @@ export const Container = styled.a`
     padding: ${theme.spacings.small};
     color: ${theme.colors.primaryColor};
     position: relative;
-
     &::after {
       content: '';
       position: absolute;

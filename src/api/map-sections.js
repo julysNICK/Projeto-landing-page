@@ -1,22 +1,23 @@
 export const mapSections = (sections = []) => {
   return sections.map((section) => {
-    if (section.__component === 'section.section-two-columns') {
+    if (section.__component === 'section.sections-two-columns') {
       return mapSectionTwoColumns(section);
     }
     if (section.__component === 'section.section-content') {
       return mapSectionContent(section);
     }
     if (section.__component === 'section.section-grid') {
-      const {
-        __component: { text_grid = [], image_grid = [] },
-      } = section;
+      const { text_grid = [], image_grid = [] } = section;
+
       if (text_grid.length > 0) {
         return mapTextGrid(section);
       }
+
       if (image_grid.length > 0) {
         return mapImageGrid(section);
       }
     }
+
     return section;
   });
 };
@@ -29,6 +30,7 @@ export const mapSectionTwoColumns = (section = {}) => {
     image: { url: srcImg = '' } = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
   } = section;
+
   return {
     component,
     title,
@@ -46,8 +48,16 @@ export const mapSectionContent = (section = {}) => {
     content: html = '',
     metadata: { background = false, section_id: sectionId = '' } = false,
   } = section;
-  return { component, title, background, sectionId, html };
+
+  return {
+    component,
+    title,
+    background,
+    sectionId,
+    html,
+  };
 };
+
 export const mapTextGrid = (section = {}) => {
   const {
     __component: component = '',
@@ -56,15 +66,23 @@ export const mapTextGrid = (section = {}) => {
     metadata: { background = false, section_id: sectionId = '' } = false,
     text_grid: grid = [],
   } = section;
+
   return {
     component: 'section.section-grid-text',
     title,
-    description,
     background,
     sectionId,
-    grid,
+    description,
+    grid: grid.map((text) => {
+      const { title = '', description = '' } = text;
+      return {
+        title,
+        description,
+      };
+    }),
   };
 };
+
 export const mapImageGrid = (section = {}) => {
   const {
     __component: component = '',

@@ -16,6 +16,7 @@ export const Base = ({ links, logoData, footerHtml, children }) => {
     </>
   );
 };
+
 Base.propTypes = {
   children: P.node.isRequired,
   ...Menu.propTypes,

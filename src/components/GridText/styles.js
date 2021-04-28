@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
 import { Title as HeadingContainer } from '../Heading/styles';
 import { Container as TextComponent } from '../Textcomponent/styles';
+
 export const Container = styled.div`
   ${({ theme }) => css`
     ${TextComponent} {
@@ -8,6 +9,7 @@ export const Container = styled.div`
     }
   `}
 `;
+
 export const Grid = styled.div`
   ${({ theme }) => css`
     counter-reset: grid-counter;

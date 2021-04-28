@@ -10,12 +10,13 @@ export const mapData = (pagesData = [{}]) => {
       sections = [],
       menu = {},
     } = data;
+
     return {
       footerHtml,
       slug,
       title,
       sections: mapSections(sections),
-      menu: mapMenu(),
+      menu: mapMenu(menu),
     };
   });
 };

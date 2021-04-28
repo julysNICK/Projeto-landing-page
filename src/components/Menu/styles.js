@@ -31,7 +31,7 @@ export const Container = styled.div`
       visibility: hidden;
       opacity: 0;
       ${visible && menuVisible(theme)}
-      >${SectionContainer} {
+      > ${SectionContainer} {
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: 1fr;
@@ -53,7 +53,6 @@ export const MenuContainer = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-
     @media ${theme.font.media.lteMedium} {
       display: block;
       text-align: center;
@@ -71,10 +70,10 @@ export const Button = styled.button`
     width: 4rem;
     height: 4rem;
     background: ${theme.colors.primaryColor};
+    color: ${theme.colors.white};
     border: none;
     display: none;
     pointer-events: ${visible ? 'none' : 'all'};
-
     @media ${theme.font.media.lteMedium} {
       display: flex;
       align-items: center;
