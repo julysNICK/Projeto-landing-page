@@ -20,8 +20,7 @@
     <li>
       <a href="#Começando">Começando</a>
       <ul>
-        <li><a href="#Pré-requisito">Pré-requisito</a></li>
-        <li><a href="#Instalação">instalação</a></li>
+        <li><a href="#Features">Features</a></li>
       </ul>
     </li>
     <li><a href="#Demonstração">Demonstração</a></li>
