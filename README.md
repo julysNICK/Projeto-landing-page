@@ -44,7 +44,7 @@ React js
  ###  Features
 
 - [x] Criação da página
--
+
 - [x] Testes das funcionalidades e componentes com jest
 
 - [x] Uso para criação de componente com storybook
@@ -125,19 +125,19 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 
 
-![]()
+![](/img/Img12.PNG)
 
 
 
-![]()
+![](/img/Img13.PNG)
 
 
 
-![]()
+![](/img/Img13.PNG)
 
 
 
-![]()
+
 
 ##  Contato
 Email: julysmartins54@gmail.com
