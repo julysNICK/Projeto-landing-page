@@ -1,3 +1,55 @@
+# Landing Page
+## Descrição do Projeto
+
+<p align="center">O projeto landing page foi feito pra colocar meu conhecimento de react em pratica e adicionar novos conhecimentos como testes com jest e o storybook</p
+ <h4 align="center"> 
+	✅  Landing Page 🚀 Concluido...  ✅
+ </h4>
+
+
+ <!-- TABLE OF CONTENTS -->
+<details open="open">
+  <summary>Tabela de conteúdos</summary>
+  <ol>
+    <li>
+      <a href="#Sobre-o-projeto">Sobre o projeto</a>
+      <ul>
+        <li><a href="#Tecnologias">Tecnologias</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#Começando">Começando</a>
+      <ul>
+        <li><a href="#Pré-requisito">Pré-requisito</a></li>
+        <li><a href="#Instalação">instalação</a></li>
+      </ul>
+    </li>
+    <li><a href="#Demonstração">Demonstração</a></li>
+    <li><a href="#Contato">Contato</a></li>
+  </ol>
+</details>
+
+## Sobre o projeto
+
+O projeto como dito lá em cima foi feito com intuito de colocar em prática os meus conhecimentos sobre react(javascript)  nesse projeto você vai observar os seguintes tópicos na sua criação:
+
+React js	
+
+* hooks 
+* componentização 
+* hooks(useState,useEfect)
+* jest
+* storybook
+* etc.
+ ###  Features
+
+- [x] Criação da página
+-
+- [x] Testes das funcionalidades e componentes com jest
+
+- [x] Uso para criação de componente com storybook
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -68,3 +120,28 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+##  Demonstração
+
+
+
+![]()
+
+
+
+![]()
+
+
+
+![]()
+
+
+
+![]()
+
+##  Contato
+Email: julysmartins54@gmail.com
+
+linkedin:www.linkedin.com/in/julys-martins-2558651a3
+
+Project Link: [https://github.com/julysNICK/Projeto-landing-page.git](https://github.com/julysNICK/Projeto-landing-page.git)
